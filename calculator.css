@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+/* Glowing dots animation */
+.background-morning {
+    background: linear-gradient(to bottom, #ffdb58, #ffefd5);
+    color: #333; /* Text color for morning */
+}
+
+/* Night theme */
+.background-night {
+    background: linear-gradient(to bottom, #2c3e50, #000000);
+    color: #ffffff; /* Text color for night */
+}
+
+
+body{
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    transition: background 0.5s ease-in-out; /* Smooth transition */
+}
+
+#calculator{
+   background-color: #000000; 
+   max-width:350px;
+   border-radius:20px;
+}
+#display{
+    width:100%;
+    padding:30px 25px;
+    font-size:30px;
+    color:white;
+    background-color: #292924;
+    border:none;
+    overflow:hidden;
+    border-top-left-radius:20px;
+    border-top-right-radius:20px;
+}
+.key-btn-styling{
+    background-color: #242424;
+    color:white;
+    font-size:19px;
+    width:60px;
+    height:60px;
+    border:none;
+    margin:5px;
+    border-radius:20px;
+    cursor:pointer;
+}
+.key-btn-styling:hover{
+    opacity:70%;
+}
+.key-btn-styling:active{
+    filter:brightness(200%);
+}
+.keys-styling{
+    padding:20px;
+}
+.orange-btn-styling{
+    color:#ef8b37;
+}
+.orange-bg-btn-styling{
+    background-color:#ef8b37;
+}
+.left-btn-styling{
+    margin-left:14px;
+}

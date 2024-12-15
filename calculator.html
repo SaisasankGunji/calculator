@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://kit.fontawesome.com/bc274ef3ff.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="calculator.css">
+    <title>Calculator</title>
+</head>
+
+<body>
+    <div class="background-animated">
+        <div id="calculator">
+            <input id="display" readonly>
+            <div id="keys" class="keys-styling">
+                <div>
+                    <button onclick="clearDisplay()" class="orange-btn-styling key-btn-styling left-btn-styling">C</button>
+                    <button onclick="popDisplay()" class="orange-btn-styling key-btn-styling">
+                        <i class="fa-solid fa-delete-left delete-left-styling"></i>
+                    </button>
+                    <button onclick="appendToDisplay('%')" class="orange-btn-styling key-btn-styling">%</button>
+                    <button onclick="appendToDisplay('/')" class="orange-btn-styling key-btn-styling">/</button>
+                </div>
+                <div>
+                    <button onclick="appendToDisplay('7')" class="key-btn-styling left-btn-styling">7</button>
+                    <button onclick="appendToDisplay('8')" class="key-btn-styling">8</button>
+                    <button onclick="appendToDisplay('9')" class="key-btn-styling">9</button>
+                    <button onclick="appendToDisplay('*')" class="orange-btn-styling key-btn-styling">*</button>
+                </div>
+                <div>
+                    <button onclick="appendToDisplay('4')" class="key-btn-styling left-btn-styling">4</button>
+                    <button onclick="appendToDisplay('5')" class="key-btn-styling">5</button>
+                    <button onclick="appendToDisplay('6')" class="key-btn-styling">6</button>
+                    <button onclick="appendToDisplay('-')" class="orange-btn-styling key-btn-styling">-</button>
+                </div>
+                <div>
+                    <button onclick="appendToDisplay('1')" class="key-btn-styling left-btn-styling">1</button>
+                    <button onclick="appendToDisplay('2')" class="key-btn-styling">2</button>
+                    <button onclick="appendToDisplay('3')" class="key-btn-styling">3</button>
+                    <button onclick="appendToDisplay('+')" class="orange-btn-styling key-btn-styling">+</button>
+                </div>
+                <div>
+                    <button onclick="appendToDisplay('0')" class="key-btn-styling left-btn-styling">0</button>
+                    <button onclick="appendToDisplay('.')" class="key-btn-styling">.</button>
+                    <button onclick="calculate()" class="orange-bg-btn-styling key-btn-styling">=</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="calculator.js"></script>
+</body>
+
+</html>
